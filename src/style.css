@@ -1,4 +1,26 @@
 body{
     color: white;
-    background-color: rgb(21, 11, 105);
+    background-color: rgb(25, 19, 81);
+    min-height: 100%;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(17, 64, 105);
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+
+}
+#header button{
+    height: 100%;
+    background-color: rgb(17, 64, 105);
+    color: white;
+    border: none;
+    border: 1px black solid;
+    border-top: 0;
+    border-bottom: 0;
 }

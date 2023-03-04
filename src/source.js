@@ -1,7 +1,5 @@
 import './style.css';
+import generateAboutPage from './menu';
 
-// Hello there
-
-const element = document.createElement('div');
-element.textContent = "Hi hahahhaha";
-document.body.appendChild(element);
+const main = document.querySelector('#mainContent');
+main.appendChild(generateAboutPage());
