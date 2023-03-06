@@ -14,7 +14,6 @@ body{
 #header {
     display: flex;
     justify-content: space-around;
-
 }
 #header button{
     height: 100%;
@@ -24,7 +23,7 @@ body{
     border: 1px black solid;
     border-top: 0;
     border-bottom: 0;
-    font-size: 40px;
+    font-size: 30px;
     transition: 0.2s;
 }
 #header button:hover{
