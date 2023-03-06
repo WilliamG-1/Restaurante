@@ -1,6 +1,7 @@
 import './style.css';
 import generateHomePage from './home';
 import generateMenuPage from './menu';
+
 import burrito from './assets/Burrito.jpg';
 import shrimp from './assets/FriedShrimp.jpg';
 import hamburger from './assets/Hamburger.jpg';
@@ -12,6 +13,12 @@ const menuBtn = document.querySelector('#menu');
 const contactBtn = document.querySelector('#contact');
 // const buttons = document.querySelectorAll('.tabButtons'); // Node list
 const content = document.querySelector('.pageBody');
+
+function resetChildren(node){
+    while (node.hasChildNodes()){
+        node.removeChild(node.lastChild);
+    }
+}
 
 homeBtn.addEventListener('click', ()=>{
     resetChildren(content);
@@ -25,10 +32,6 @@ contactBtn.addEventListener('click', ()=>{
     resetChildren(content);
 })
 
-content.appendChild(generateAboutPage());
 
-function resetChildren(node){
-    while (node.hasChildNodes()){
-        node.removeChild(node.lastChild);
-    }
-}
+
+content.appendChild(generateHomePage());

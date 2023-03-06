@@ -7,6 +7,7 @@ body{
 #content{
     display: flex;
     flex-direction: column;
+    row-gap: 50px;
     background-color: rgb(17, 64, 105);
 }
 
@@ -23,6 +24,13 @@ body{
     border: 1px black solid;
     border-top: 0;
     border-bottom: 0;
+    font-size: 40px;
+    transition: 0.2s;
+}
+#header button:hover{
+    background-color: rgb(230, 230, 96);
+    color: rgb(17, 64, 105);
+    transform: scale(1.02);
 }
 .menuItem img{
     max-height: 400px;
@@ -33,4 +41,9 @@ body{
     box-shadow: 0 0 5px black;
     background-color: rgb(36, 97, 150);
     margin: 20px;
+    transition: 0.2s;
+}
+.menuItem:hover{
+    transform: scale(1.03);
+    border: 1px yellow solid;
 }
