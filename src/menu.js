@@ -33,6 +33,7 @@ const MenuItem = (name, price, imgPath) => {
 
     let menuItem = document.createElement('div');
     menuItem.classList.add('menuItem');
+    
     let eTitle = document.createElement('h3');
     eTitle.textContent = name;
 
