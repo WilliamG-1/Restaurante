@@ -1,5 +1,20 @@
 import './style.css';
-import generateAboutPage from './menu';
+import generateHomePage from './home';
+const homeBtn = document.querySelector('#home');
+const meneuBtn = document.querySelector('#menu');
+const contactBtn = document.querySelector('#contact');
+// const buttons = document.querySelectorAll('.tabButtons'); // Node list
 
-const main = document.querySelector('#mainContent');
-main.appendChild(generateAboutPage());
+homeBtn.addEventListener('click', ()=>{
+    resetChildren(content);
+    content.appendChild(generateHomePage());
+})
+
+const content = document.querySelector('#content');
+content.appendChild(generateAboutPage());
+
+function resetChildren(node){
+    while (node.hasChildNodes()){
+        node.removeChild(node.lastChild);
+    }
+}
