@@ -1,17 +1,12 @@
 
 function generateHomePage(){
     const mainContent = document.createElement('div');
-    mainContent.setAttribute("id", "mainContent");
+    mainContent.setAttribute("id", "aboutContent");
 
     
     const aboutSection = document.createElement('div');
     aboutSection.classList.add("restaurantDescription");
-    aboutSection.textContent = `modules by path ./node_modules/css-loader/dist/runtime/*.js 2.74 KiB
-    ./node_modules/css-loader/dist/runtime/sourceMaps.js 505 bytes [built] [code generated]
-    ./node_modules/css-loader/dist/runtime/api.js 2.25 KiB [built] [code generated]
-modules by path ./src/ 2.77 KiB
-  ./src/source.js 22 bytes [built] [code generated]
-  ./src/style.css 1.11 KiB [built] [code generated]`;
+    aboutSection.textContent = `Creado desde el corazon de la Gomita, nuestro Restaurante se compromete a brindarle la comida de alta calidad y a precio economico!`;
 
     const restaurantHours = document.createElement('div');
     restaurantHours.classList.add("restaurantHours");
